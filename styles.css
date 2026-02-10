@@ -315,4 +315,14 @@ h2 {
 .music-btn:hover {
     transform: scale(1.05);
     background: var(--secondary-color);
-} 
+}
+
+.floating-emoji-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+    /* Inherit animation from parent */
+    display: block;
+}

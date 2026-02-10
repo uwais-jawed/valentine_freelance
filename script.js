@@ -92,7 +92,16 @@ function createFloatingElements() {
     config.floatingEmojis.hearts.forEach(heart => {
         const div = document.createElement('div');
         div.className = 'heart';
-        div.innerHTML = heart;
+        if (heart.endsWith('.png') || heart.endsWith('.jpg') || heart.endsWith('.jpeg') || heart.endsWith('.gif') || heart.startsWith('http')) {
+            // Use image
+            const img = document.createElement('img');
+            img.src = heart;
+            img.className = 'floating-emoji-image';
+            div.appendChild(img);
+        } else {
+            // Use emoji text
+            div.innerHTML = heart;
+        }
         setRandomPosition(div);
         container.appendChild(div);
     });
@@ -101,7 +110,14 @@ function createFloatingElements() {
     config.floatingEmojis.bears.forEach(bear => {
         const div = document.createElement('div');
         div.className = 'bear';
-        div.innerHTML = bear;
+        if (bear.endsWith('.png') || bear.endsWith('.jpg') || bear.endsWith('.jpeg') || bear.endsWith('.gif') || bear.startsWith('http')) {
+            const img = document.createElement('img');
+            img.src = bear;
+            img.className = 'floating-emoji-image';
+            div.appendChild(img);
+        } else {
+            div.innerHTML = bear;
+        }
         setRandomPosition(div);
         container.appendChild(div);
     });
@@ -239,4 +255,4 @@ function setupMusicPlayer() {
             musicToggle.textContent = config.music.startText;
         }
     });
-} 
+}
