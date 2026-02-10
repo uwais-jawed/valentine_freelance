@@ -16,9 +16,9 @@ const CONFIG = {
     floatingEmojis: {
         hearts: [
             'images/chatpati.png',
-                        'images/chatpati.png',
+                        'images/lassi.jpeg',
             'images/chatpati.png',
-            'images/chatpati.png',
+            'images/lassi.jpeg',
             '💞',
                         '💝',
             '💗',
@@ -33,8 +33,8 @@ const CONFIG = {
                         '💝',
             '💗',
                         'images/lassi.jpeg',
-            'images/lassi.jpeg',
-            'images/lassi.jpeg',
+            'images/chatpati.png',
+            'images/chatpati.png',
             
             '💖',
 
@@ -47,7 +47,7 @@ const CONFIG = {
         first: {
             text: "Do you like me?",                                    // First interaction
             yesBtn: "Yes",                                             // Text for "Yes" button
-            noBtn: "No",                                               // Text for "No" button
+            noBtn: "No :(",                                               // Text for "No" button
             secretAnswer: "I don't like you, I love you! ❤️"           // Secret hover message
         },
         second: {
@@ -56,9 +56,9 @@ const CONFIG = {
             nextBtn: "Next ❤️"                                         // Text for the next button
         },
         third: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
+            text: "Will you be my Valentine on February 14th, 2026? 🌹", // The big question!
             yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+            noBtn: "Oo drdii kyuu aee singhh?"                                               // Text for "No" button
         }
     },
 
