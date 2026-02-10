@@ -209,8 +209,21 @@ function createHeartExplosion() {
     for (let i = 0; i < 50; i++) {
         const heart = document.createElement('div');
         const randomHeart = config.floatingEmojis.hearts[Math.floor(Math.random() * config.floatingEmojis.hearts.length)];
-        heart.innerHTML = randomHeart;
         heart.className = 'heart';
+        if (
+            randomHeart.endsWith('.png') ||
+            randomHeart.endsWith('.jpg') ||
+            randomHeart.endsWith('.jpeg') ||
+            randomHeart.endsWith('.gif') ||
+            randomHeart.startsWith('http')
+        ) {
+            const img = document.createElement('img');
+            img.src = randomHeart;
+            img.className = 'floating-emoji-image';
+            heart.appendChild(img);
+        } else {
+            heart.innerHTML = randomHeart;
+        }
         document.querySelector('.floating-elements').appendChild(heart);
         setRandomPosition(heart);
     }
