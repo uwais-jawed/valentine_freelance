@@ -88,31 +88,39 @@ window.addEventListener('DOMContentLoaded', () => {
 function createFloatingElements() {
     const container = document.querySelector('.floating-elements');
     
+    // Create hearts
     config.floatingEmojis.hearts.forEach(heart => {
         const div = document.createElement('div');
         div.className = 'heart';
-        if (
-            heart.endsWith('.png') ||
-            heart.endsWith('.jpg') ||
-            heart.endsWith('.jpeg') ||
-            heart.endsWith('.gif') ||
-            heart.startsWith('http')
-        ) {
+        if (heart.endsWith('.png') || heart.endsWith('.jpg') || heart.endsWith('.jpeg') || heart.endsWith('.gif') || heart.startsWith('http')) {
             // Use image
             const img = document.createElement('img');
             img.src = heart;
-            img.alt = 'heart';
-            img.style.width = '40px'; // Adjust size as needed
-            img.style.height = '40px';
+            img.className = 'floating-emoji-image';
             div.appendChild(img);
         } else {
-            // Use emoji/text
-            div.textContent = heart;
+            // Use emoji text
+            div.innerHTML = heart;
         }
+        setRandomPosition(div);
         container.appendChild(div);
     });
 
-    // Repeat similar logic for bears or other floating elements if needed
+    // Create bears
+    config.floatingEmojis.bears.forEach(bear => {
+        const div = document.createElement('div');
+        div.className = 'bear';
+        if (bear.endsWith('.png') || bear.endsWith('.jpg') || bear.endsWith('.jpeg') || bear.endsWith('.gif') || bear.startsWith('http')) {
+            const img = document.createElement('img');
+            img.src = bear;
+            img.className = 'floating-emoji-image';
+            div.appendChild(img);
+        } else {
+            div.innerHTML = bear;
+        }
+        setRandomPosition(div);
+        container.appendChild(div);
+    });
 }
 
 // Set random position for floating elements
