@@ -73,7 +73,7 @@ const CONFIG = {
     // Messages that appear after they say "Yes!"
     celebration: {
         title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a machine wali chummmmiiii!",
+        message: "Now come get your gift, a machhiii wali chummmmiiii!",
         emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
     },
 
@@ -101,7 +101,7 @@ const CONFIG = {
     music: {
         enabled: true,                     // Music feature is enabled
         autoplay: true,                    // Try to autoplay (note: some browsers may block this)
-        musicUrl: "https://res.cloudinary.com/dnuj9sjej/video/upload/v1770705828/Sitti_jcksn5.mp3", // Music streaming URL
+        musicUrl: "https://res.cloudinary.com/dnuj9sjej/video/upload/v1770712308/sitti_ElZRyG8J_fbxptz.mp3", // Music streaming URL
         startText: "🎵 Music On",        // Button text to start music
         stopText: "🔇 Music Off",         // Button text to stop music
         volume: 0.5                        // Volume level (0.0 to 1.0)
