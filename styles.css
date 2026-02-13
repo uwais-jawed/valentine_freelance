@@ -286,7 +286,7 @@ h2 {
 .celebration{
     background: url('images/bg4.jpeg');
     min-height: 700px;
-    background-size: contain;
+    background-size: cover;
     border-radius: 20px;
     padding: 1rem ;
 }
