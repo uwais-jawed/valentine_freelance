@@ -30,10 +30,12 @@
         </div>
 
         <!-- First Question -->
-        <div class="question-section" id="question1">
-            <h2 id="question1Text"></h2>
+        <div class="question-section question-bg1" id="question1">
+            <h2 id="question1Text" class="q1text stroke-text"></h2>
+            <div class="btns">
             <button class="cute-btn" onclick="moveButton(this)" id="yesBtn1"></button>
             <button class="cute-btn" onclick="moveButton(this)" id="noBtn1"></button>
+            </div>
             <!-- CUSTOMIZE: Secret answer text -->
             <div class="secret-answer">
                 <button class="cute-btn special" onclick="showNextQuestion(2)" id="secretAnswerBtn"></button>
@@ -41,13 +43,13 @@
         </div>
 
         <!-- Second Question (Love Meter) -->
-        <div class="question-section hidden" id="question2">
-            <h2 id="question2Text"></h2>
+        <div class="question-section question-bg2 hidden" id="question2">
+            <h2 id="question2Text" class="stroke-text"></h2>
             <!-- Love meter settings: min="0" max="10000" -->
             <div class="love-meter">
                 <input type="range" min="0" max="10000" value="100" class="slider" id="loveMeter">
                 <p>
-                    <span class="love-value-container"><span id="startText"></span> (<span id="loveValue">100</span>%)</span>
+                    <span class="love-value-container"><span id="startText" class="stroke-text"></span> (<span id="loveValue">100</span>%)</span>
                     <span id="extraLove" class="hidden"></span>
                 </p>
             </div>
@@ -55,8 +57,8 @@
         </div>
 
         <!-- Final Question -->
-        <div class="question-section hidden" id="question3">
-            <h2 id="question3Text"></h2>
+        <div class="question-section question-bg3 hidden " id="question3">
+            <h2 id="question3Text" class="stroke-text"></h2>
             <button class="cute-btn final-yes" onclick="celebrate()" id="yesBtn3"></button>
             <button class="cute-btn" onclick="moveButton(this)" id="noBtn3"></button>
         </div>
@@ -64,8 +66,8 @@
         <!-- CUSTOMIZE: Celebration message -->
         <div class="celebration hidden" id="celebration">
             <h2 id="celebrationTitle"></h2>
-            <p class="celebration-text" id="celebrationMessage"></p>
-            <p class="celebration-text" id="celebrationEmojis"></p>
+            <p class="celebration-text stroke-text" id="celebrationMessage"></p>
+            <p class="celebration-text stroke-text" id="celebrationEmojis"></p>
         </div>
     </div>
 
@@ -74,4 +76,4 @@
     <script src="theme.js"></script>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
