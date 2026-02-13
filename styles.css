@@ -387,3 +387,75 @@ h2 {
     display: flex;
     gap: 15px;
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .container {
+        max-width: 90vw;
+        padding: 1.2rem;
+    }
+    .question-section {
+        min-height: 300px;
+        padding: 1.2rem;
+    }
+    .celebration {
+        min-height: 400px;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        align-items: flex-start;
+    }
+    .container {
+        max-width: 100vw;
+        margin: 0;
+        border-radius: 0;
+        padding: 0.5rem;
+    }
+    .question-section {
+        min-height: 200px;
+        padding: 0.7rem;
+        border-radius: 12px;
+        margin: 10px 0;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    h2, .celebration-text {
+        font-size: 1.1rem;
+        margin: 0.7rem 0;
+    }
+    .cute-btn, .music-btn {
+        font-size: 1rem;
+        padding: 8px 12px;
+        margin: 6px;
+    }
+    .love-meter {
+        padding: 5px 0;
+    }
+    .floating-emoji-image {
+        width: 36px;
+        height: 36px;
+    }
+    .secret-answer {
+        bottom: 10px;
+        right: 10px;
+        transform: scale(0.6);
+    }
+    .celebration {
+        min-height: 200px;
+        padding: 0.5rem;
+        border-radius: 12px;
+    }
+}
+
+/* Make sure buttons stack vertically on small screens */
+@media (max-width: 400px) {
+    .btns {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
