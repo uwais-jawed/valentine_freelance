@@ -446,7 +446,7 @@ h2 {
         transform: scale(0.6);
     }
     .celebration {
-        min-height: 200px;
+        min-height: 400px;
         padding: 0.5rem;
         border-radius: 12px;
     }
